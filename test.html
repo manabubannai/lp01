@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<!--▼VPS-NEOの購読/解除フォームここから-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://mba-cebu.com/neo/js/jquery-validator/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://mba-cebu.com/neo/js/jquery-validator/messages_ja.js"></script>
+<script type="text/javascript">
+
+//<![CDATA[
+$(document).ready(function() {
+	$("#mailform").validate({
+		errorClass: "JQVError",
+		rules: {
+
+			act: "required",
+
+
+			email: {required: true, email: true},
+
+
+			name: {required: true},
+
+
+
+
+
+
+
+
+
+
+
+
+			tel: {required: true, telnum: true},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		}});
+});
+//]]>
+
+</script>
+<form method=post id="mailform" action="http://mba-cebu.com/neo/usrctrl.php">
+<input type="hidden" name="mag_id" value="3" />
+<input type="hidden" name="form_id" value="3" />
+			<input type="hidden" name="charset" value="u" />
+				<input type="hidden" name="type" value="form" />
+	<div class="mailform_body">
+<div id="magazine_name">フィリピン留学なら、社会人限定のオトナ留学MBA</div>
+<div class="mailform_clear"></div>
+			<div class="mailform_select">
+		<input type="radio" name="act" value="add" checked="checked" />登録
+<input type="radio" name="act" value="del" />解除
+		</div>
+		<div class="mailform_clear"></div>
+				<span class="mailform_l">
+		<span class="require_mark">*</span>		<label for="email">メールアドレス:</label></span><div class="mailform_r">
+		<input type="text" id="email" name="email" value="" /></div>
+		<div class="mailform_clear"></div>
+				<span class="mailform_l">
+		<span class="require_mark">*</span>		<label for="name">名前:</label></span><div class="mailform_r">
+		<input type="text" id="name" name="name" value="" /></div>
+		<div class="mailform_clear"></div>
+				<span class="mailform_l">
+		<span class="require_mark">*</span>		<label for="tel">電話番号:</label></span><div class="mailform_r">
+		<input type="text" id="tel" name="tel" value="" /></div>
+		<div class="mailform_clear"></div>
+	<div class="mailform_submit"><input class="submitButton" type="submit" value="送信"></div>
+<div id="suponsor_link"><div class="mailform_footer">Powered By <a href="http://www.neo-vps.com" rel="nofollow">VPS-NEO</a></div></div>
+</div>
+</form>
+<!--▲VPS-NEOの購読/解除フォームここまで-->
+
+</body>
+</html>
